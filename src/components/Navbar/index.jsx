@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><a href="/">About</a></li>
         <li><a href="/">Categories</a></li>
         <li><a href="/">Contact</a></li>
-        <li><button className="enquiry-btn">Enquire</button></li>
+        <li><button className="enquiry-btn">Enquire Now</button></li>
       </ul>
     </nav>
   )
