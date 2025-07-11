@@ -1,13 +1,15 @@
 import React from "react";
 import './navbar.css';
+import logo from './allsee_logo.svg';
+
 
 
 const Navbar = () => {
   // Task alloted to Tisha and Ansh
   return (
     < nav className="navbar">
-      <div className="logo>">
-        <img src="" alt="Logo"/>
+      <div className="logo">
+        <img src={logo} alt="Logo"/>
       </div>
 
       <ul className="navbar-options">
