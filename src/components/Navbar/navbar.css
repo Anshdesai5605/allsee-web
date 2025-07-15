@@ -1,52 +1,95 @@
-/* Container styling */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 48px; /* reduced vertical space */
-  height: 60px; /* fixed height */
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-  color: #fff;
-  font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px; 
+    height: 60px; 
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    color: #3A3A3A;
+    font-family: 'Lato', sans-serif;
 }
-/* Logo container */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .logo img {
-  height: 67.63px;
-  width: 56.82px;
-}
-/* Navigation list */
-.navbar-options {
-  list-style: none;
-  display: flex;
-  gap: 32px;
-  align-items: center;
+  height: 60px;
+  width: auto;
+  display: block; 
   margin: 0;
+  padding: 0;
 }
-/* Links */
-.navbar-options li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  position: relative;
-}
-/* Enquiry Button */
-.enquiry-btn {
-  background: transparent;
-  border: 1px solid white;
-  border-radius: 8px;
-  padding: 8px 16px;
+
+.logo-text {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
   color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  transform: translateY(-15px);
 }
-.enquiry-btn:hover {
-  background-color: white;
-  color: black;
+  
+  
+  .navbar-options ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-options li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  
+  .enquiry-btn {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none; 
+    display: inline-block; 
+  }
+  
+  .enquiry-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .navbar-options ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
+
+.navbar-options li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+

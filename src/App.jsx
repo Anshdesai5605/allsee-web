@@ -1,17 +1,22 @@
-import "./App.css";
-import About from "./components/About";
-import HeroSection from "./components/HeroSection";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import StatisticSection from "./components/StatisticSection";
+import About from "./components/About";  
+import Categories from "./components/Categories"; 
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <HeroSection />
-      <StatisticSection />
-      <About />
-    </>
+      <div style={{ paddingTop: "80px" }}>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/categories" element={<Categories />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/home" element={<HeroSection />} /> */}
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

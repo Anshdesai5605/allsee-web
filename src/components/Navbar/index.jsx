@@ -1,26 +1,27 @@
-import React from "react";
-import './navbar.css';
-import logo from './allsee_logo.svg';
-
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import './Navbar.css';
+import logo from '../../assets/Logo_white.png';
 
 const Navbar = () => {
-  // Task alloted to Tisha and Ansh
   return (
-    < nav className="navbar">
+    <div className="navbar">
       <div className="logo">
-        <img src={logo} alt="Logo"/>
+        <img src={logo} alt="Logo" />
+        
       </div>
 
-      <ul className="navbar-options">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Categories</a></li>
-        <li><a href="/">Contact</a></li>
-        <li><button className="enquiry-btn">Enquire Now</button></li>
-      </ul>
-    </nav>
-  )
+      <div className="navbar-options">
+        <ul>
+          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/categories">Categories</Link></li>
+          <li><Link to="/contact" className="enquiry-btn">Enquire Now</Link></li>
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
